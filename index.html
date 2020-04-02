@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - PiggyVest</title>
+  <link rel="stylesheet" href="./assets/styles/styles.css" />
+</head>
+
+<body>
+  <div class="content">
+    <div class="content-bg min-h-screen flex flex-col items-center overflow-auto
+    bg-primary-700 py-12">
+      <header>
+        <a href="https://www.piggyvest.com">
+          <img src="./assets/img/piggyvest_logo.svg" alt="Piggybank Logo" class="mb-12">
+        </a>
+      </header>
+      <div class="brand-border-radius-lg bg-white p-8 pb-10 sm-p-10 sm-pb-12 w-11-per-12 max-w-md">
+        <header class="mb-6 sm-mb-8 flex flex-col items-center">
+          <h1 class="text-xl md-text-2xl text-primary font-bold font-display text-center">
+            Create a Secure Account
+          </h1>
+          <p class="text-sm font-body text-gray-700 text-center">
+            Welcome to the future of Savings &amp; Investments
+          </p>
+        </header>
+        <form class="flex-1 flex flex-col min-h-min-content my-8 overflow-y-auto mt-8 mb-0">
+          <div class="flex flex-col mb-8 relative">
+            <label class="text-xs leading-loose mb-1 text-gray-700 font-bold font-display">
+              Full Name
+            </label>
+            <input class="py-3 pr-2 md-py-4 md-pr-4 rounded-xs bg-gray-200 text-gray-900 outline-none pl-3 md-pl-4"
+              name="fullname" type="text" placeholder="Full Name" value="">
+          </div>
+          <div class="flex flex-col mb-8 relative">
+            <label class="text-xs leading-loose mb-1 text-gray-700 font-bold font-display">
+              Email Address
+            </label>
+            <input class="py-3 pr-2 md-py-4 md-pr-4 rounded-xs bg-gray-200 text-gray-900 outline-none pl-3 md-pl-4"
+              name="email" type="email" placeholder="Email Address" value="">
+          </div>
+          <div class="flex flex-col mb-8 relative">
+            <label class="text-xs leading-loose mb-1 text-gray-700 font-bold font-display">
+              Password
+            </label>
+            <input class="py-3 pr-2 md-py-4 md-pr-4 rounded-xs bg-gray-200 text-gray-900 outline-none pl-3 md-pl-4"
+              name="password" type="password" placeholder="Password" value="">
+          </div>
+          <div class="flex flex-col mb-8 relative">
+            <label class="text-xs leading-loose mb-1 text-gray-700 font-bold font-display">
+              Referrer Phone or Promo Code (Optional)
+            </label>
+            <input class="py-3 pr-2 md-py-4 md-pr-4 rounded-xs bg-gray-200 text-gray-900 outline-none pl-3 md-pl-4"
+              name="promocode" type="text" placeholder="Referrer Phone or Promo Code" value="">
+          </div>
+          <div class="flex flex-col mb-8 relative">
+            <label class="text-xs leading-loose mb-1 text-gray-700 font-bold font-display">
+              How Did You Hear About Us? (Optional)
+            </label>
+            <div class="select-container rounded-sm bg-gray-200 text-gray-900">
+              <div class="select-control">
+                <select name="referrer">
+                  <option value="" selected>Click to select</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="twitter">Twitter</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="personalreferral">Family/Friend/Coworker referral</option>
+                  <option value="googlesearch">Google search</option>
+                  <option value="googleplaystore">Google playstore</option>
+                  <option value="blog">Online blog</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-1 items-end">
+            <button class="sc-iwsKbI btn-create-account block disabled:opacity-75
+            disabled:cursor-not-allowed text-center whitespace-no-wrap
+            brand-border-radius-sm w-100 flex flex-col md:flex-row items-center
+            justify-center pt-5 py-4 px-10 font-display text-sm md:text-sm
+            uppercase #083E9E font-bold text-white hover:bg-primary-500 mt-0" type="submit">
+              CREATE ACCOUNT
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
