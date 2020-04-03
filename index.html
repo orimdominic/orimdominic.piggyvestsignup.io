@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard - PiggyVest</title>
+  <title>PiggyVest | Dashboard</title>
   <link rel="stylesheet" href="./assets/styles/styles.css" />
 </head>
 
 <body>
   <div class="content">
-    <div class="content-bg min-h-screen flex flex-col items-center overflow-auto
+    <div class="content-bg flex flex-col items-center overflow-auto
     bg-primary-700 py-12">
       <header>
         <a href="https://www.piggyvest.com">
@@ -31,8 +31,8 @@
             <label class="text-xs leading-loose mb-1 text-gray-700 font-bold font-display">
               Full Name
             </label>
-            <input class="py-3 pr-2 md-py-4 md-pr-4 rounded-xs bg-gray-200 text-gray-900 outline-none pl-3 md-pl-4"
-              name="fullname" type="text" placeholder="Full Name" value="">
+            <input class="py-3 pr-2 md-py-4 md-pr-4 rounded-xs bg-gray-200 text-gray-900
+            outline-none pl-3 md-pl-4" name="fullname" type="text" placeholder="Full Name" value="">
           </div>
           <div class="flex flex-col mb-8 relative">
             <label class="text-xs leading-loose mb-1 text-gray-700 font-bold font-display">
@@ -75,16 +75,21 @@
             </div>
           </div>
           <div class="flex flex-1 items-end">
-            <button class="sc-iwsKbI btn-create-account block disabled:opacity-75
-            disabled:cursor-not-allowed text-center whitespace-no-wrap
-            brand-border-radius-sm w-100 flex flex-col md:flex-row items-center
-            justify-center pt-5 py-4 px-10 font-display text-sm md:text-sm
-            uppercase #083E9E font-bold text-white hover:bg-primary-500 mt-0" type="submit">
+            <button class="btn-create-account brand-border-radius-sm text-center
+              w-100 flex flex-col md-flex-row items-center justify-center pt-5
+              py-4 px-10 font-display text-sm md-text-sm font-bold text-white
+              mt-0" type="submit">
               CREATE ACCOUNT
             </button>
           </div>
         </form>
       </div>
+      <a class="block disabled:opacity-75 disabled:cursor-not-allowed text-center
+                  whitespace-no-wrap brand-border-radius-sm flex flex-col md:flex-row items-center
+                  justify-center py-1 px-3 md:px-5 font-body text-xs md:text-sm #fff
+                  bg-transparent font-normal hover:text-primary-500 mt-8" href="/login">
+        Already have an account? Log In
+      </a>
     </div>
   </div>
 </body>

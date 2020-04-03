@@ -11,12 +11,10 @@ html {
     segoe ui emoji, segoe ui symbol, noto color emoji;
   line-height: 1.5;
   box-sizing: border-box;
-  width: 100%;
 }
 
 body {
   margin: 0;
-  width: 100%;
 }
 
 img {
@@ -54,40 +52,47 @@ img {
 .justify-center {
   justify-content: center;
 }
+
+@media (min-width: 768px) {
+  .md-flex-row {
+    flex-direction: row;
+  }
+}
+
 /* generic boxing */
 
 .outline-none {
   outline: 0;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
 .w-11-per-12 {
   width: 91.666667%;
 }
 .w-100 {
   width: 100%;
 }
+
 .min-h-min-content {
-  min-height: -webkit-min-content;
-  min-height: -moz-min-content;
   min-height: min-content;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
-.mb-0 {
-  margin-bottom: 0;
-}
-.mt-8 {
-  margin-top: calc(8 * var(--boxing_ratio));
-}
 .my-8 {
   margin-top: calc(8 * var(--boxing_ratio));
   margin-bottom: calc(8 * var(--boxing_ratio));
 }
+
 .mt-0 {
   margin-top: 0;
+}
+.mt-8 {
+  margin-top: calc(8 * var(--boxing_ratio));
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 .mb-1 {
   margin-bottom: calc(1 * var(--boxing_ratio));
@@ -106,38 +111,38 @@ img {
   padding: calc(8 * var(--boxing_ratio));
 }
 
-.pl-3 {
-  padding-left: calc(3 * var(--boxing_ratio));
-}
-
-.pr-2 {
-  padding-bottom: calc(2 * var(--boxing_ratio));
-}
-
-.pt-5 {
-  padding-top: calc(5 * var(--boxing_ratio));
-}
 .px-10 {
   padding-left: calc(10 * var(--boxing_ratio));
   padding-right: calc(10 * var(--boxing_ratio));
-}
-.py-4 {
-  padding-top: calc(4 * var(--boxing_ratio));
-  padding-bottom: calc(4 * var(--boxing_ratio));
-}
-
-.pb-10 {
-  padding-bottom: calc(10 * var(--boxing_ratio));
 }
 
 .py-3 {
   padding-top: calc(3 * var(--boxing_ratio));
   padding-bottom: calc(3 * var(--boxing_ratio));
 }
-
+.py-4 {
+  padding-top: calc(4 * var(--boxing_ratio));
+  padding-bottom: calc(4 * var(--boxing_ratio));
+}
 .py-12 {
   padding-top: calc(12 * var(--boxing_ratio));
   padding-bottom: calc(12 * var(--boxing_ratio));
+}
+
+.pl-3 {
+  padding-left: calc(3 * var(--boxing_ratio));
+}
+
+.pr-2 {
+  padding-right: calc(2 * var(--boxing_ratio));
+}
+
+.pt-5 {
+  padding-top: calc(5 * var(--boxing_ratio));
+}
+
+.pb-10 {
+  padding-bottom: calc(10 * var(--boxing_ratio));
 }
 
 .min-h-screen {
@@ -145,11 +150,11 @@ img {
 }
 
 @media (min-width: 640px) {
-  .sm-mb-8 {
-    margin-bottom: calc(8 * var(--boxing_ratio));
-  }
   .sm-p-10 {
     padding: calc(10 * var(--boxing_ratio));
+  }
+  .sm-mb-8 {
+    margin-bottom: calc(8 * var(--boxing_ratio));
   }
   .sm-pb-12 {
     padding-bottom: calc(12 * var(--boxing_ratio));
@@ -157,15 +162,15 @@ img {
 }
 
 @media (min-width: 768px) {
+  .md-py-4 {
+    padding-top: calc(4 * var(--boxing_ratio));
+    padding-bottom: calc(4 * var(--boxing_ratio));
+  }
   .md-pl-4 {
-    padding-left: 1rem;
+    padding-left: calc(4 * var(--boxing_ratio));
   }
   .md-pr-4 {
-    padding-right: 1rem;
-  }
-  .md-py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-right: calc(4 * var(--boxing_ratio));
   }
 }
 
@@ -245,6 +250,9 @@ p {
 }
 
 @media (min-width: 768px) {
+  .md-text-sm {
+    font-size: 0.875rem;
+  }
   .md-text-2xl {
     font-size: 1.5rem;
   }
@@ -304,8 +312,7 @@ input {
 }
 
 .select-container .select-control {
-  color: red;
-  padding: 1rem;
+  padding: .5rem;
   background: rgb(237, 242, 247);
   border-width: initial;
   border-style: none;
@@ -344,8 +351,14 @@ input {
   text-align: center;
   cursor: pointer;
   border: none;
+  overflow: visible;
+  margin: 0;
 }
 
 .btn-create-account:hover {
   background-color: #062b6f;
+}
+
+.content-bg > a {
+  color: #fff;
 }
