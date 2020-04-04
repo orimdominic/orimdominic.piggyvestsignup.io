@@ -111,11 +111,19 @@ img {
   padding: calc(8 * var(--boxing_ratio));
 }
 
+.px-3 {
+  padding-left: calc(3 * var(--boxing_ratio));
+  padding-right: calc(3 * var(--boxing_ratio));
+}
 .px-10 {
   padding-left: calc(10 * var(--boxing_ratio));
   padding-right: calc(10 * var(--boxing_ratio));
 }
 
+.py-1 {
+  padding-top: calc(1 * var(--boxing_ratio));
+  padding-bottom: calc(1 * var(--boxing_ratio));
+}
 .py-3 {
   padding-top: calc(3 * var(--boxing_ratio));
   padding-bottom: calc(3 * var(--boxing_ratio));
@@ -162,6 +170,10 @@ img {
 }
 
 @media (min-width: 768px) {
+  .md-px-5 {
+    padding-left: calc(5 * var(--boxing_ratio));
+    padding-right: calc(5 * var(--boxing_ratio));
+  }
   .md-py-4 {
     padding-top: calc(4 * var(--boxing_ratio));
     padding-bottom: calc(4 * var(--boxing_ratio));
@@ -312,7 +324,7 @@ input {
 }
 
 .select-container .select-control {
-  padding: .5rem;
+  padding: 0.5rem;
   background: rgb(237, 242, 247);
   border-width: initial;
   border-style: none;
@@ -361,4 +373,11 @@ input {
 
 .content-bg > a {
   color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 400;
+}
+
+.content-bg > a:hover {
+  color: rgb(179, 179, 179);
 }
