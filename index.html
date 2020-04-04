@@ -10,15 +10,15 @@
 
 <body>
   <div class="content">
-    <div class="content-bg flex flex-col items-center overflow-auto
-    bg-primary-700 py-12">
+    <div class="content-bg bg-primary-700 py-12">
       <header>
         <a href="https://www.piggyvest.com">
           <img src="./assets/img/piggyvest_logo.svg" alt="Piggybank Logo" class="mb-12">
         </a>
       </header>
-      <div class="brand-border-radius-lg bg-white p-8 pb-10 sm-p-10 sm-pb-12 w-11-per-12 max-w-md">
-        <header class="mb-6 sm-mb-8 flex flex-col items-center">
+      <div class="form-container brand-border-radius-lg bg-white p-8 pb-10 sm-p-10
+        sm-pb-12 w-11-per-12 max-w-md">
+        <header class="mb-6 sm-mb-8">
           <h1 class="text-xl md-text-2xl text-primary font-bold font-display text-center">
             Create a Secure Account
           </h1>
@@ -26,7 +26,7 @@
             Welcome to the future of Savings &amp; Investments
           </p>
         </header>
-        <form class="flex-1 flex flex-col min-h-min-content my-8 overflow-y-auto mt-8 mb-0">
+        <form class="my-8 mt-8 mb-0">
           <div class="flex flex-col mb-8 relative">
             <label class="text-xs leading-loose mb-1 text-gray-700 font-bold font-display">
               Full Name
@@ -40,6 +40,13 @@
             </label>
             <input class="py-3 pr-2 md-py-4 md-pr-4 rounded-xs bg-gray-200 text-gray-900 outline-none pl-3 md-pl-4"
               name="email" type="email" placeholder="Email Address" value="">
+          </div>
+          <div class="flex flex-col mb-8 relative">
+            <label class="text-xs leading-loose mb-1 text-gray-700 font-bold font-display">
+              Phone Number
+            </label>
+            <input class="py-3 pr-2 md-py-4 md-pr-4 rounded-xs bg-gray-200 text-gray-900 outline-none pl-3 md-pl-4"
+              name="phone" type="tel" placeholder="Phone Number" value="">
           </div>
           <div class="flex flex-col mb-8 relative">
             <label class="text-xs leading-loose mb-1 text-gray-700 font-bold font-display">
@@ -86,7 +93,7 @@
       </div>
       <a class="text-center flex flex-col md-flex-row items-center
                   justify-center py-1 px-3 md-px-5 font-body text-xs md-text-sm
-                  font-normal mt-8" href="/login">
+                  font-normal mt-8" href="https://dashboard.piggyvest.com/login">
         Already have an account? Log In
       </a>
     </div>
